@@ -9,6 +9,17 @@
         font-weight: 500;
         text-align: left;
     }
+    .error{
+        border: 1px solid red;
+        box-shadow: 0 0 5px red;
+    }
+    label.error{
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        color: white;
+        box-shadow: none;
+    }
 }
 
 @media (max-width:960px){

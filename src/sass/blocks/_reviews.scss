@@ -1,0 +1,83 @@
+.reviews{
+    padding-bottom: 71px;
+    &__container{
+        margin-top: 70px;
+    }
+    &-item{
+        display: flex;
+        &:nth-child(n+2){
+            margin-top: 100px;
+        }
+        img{
+            width: 169px;
+            height: 169px;
+            margin-right: 60px;
+        }
+        &__content{
+            max-width: 672px;
+        }
+        &__name{
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+        &__progress{
+            margin-top: 10px;
+            color: #646464;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+        &__descr{
+            margin-top: 11px;
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 970px){
+    .reviews{
+        padding: 0 10px 0 10px;
+        padding-bottom: 71px;
+        &__container{
+            margin-top: 70px;
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .reviews{
+        &__container{
+            margin-top: 40px;
+        }
+        &-item{
+            &:nth-child(n+2){
+                margin-top: 70px;
+            }
+            img{
+                margin-right: 40px;
+            }
+        }
+    } 
+}
+
+@media (max-width: 550px){
+    .reviews{
+        padding: 0 20px 0 20px;
+        padding-bottom: 41px;
+        &-item{
+            &:nth-child(n+2){
+                margin-top: 50px;
+            }
+            img{
+                display: none;
+            }
+            &__descr{
+                font-size: 14px;
+            }
+        }  
+    }
+}
