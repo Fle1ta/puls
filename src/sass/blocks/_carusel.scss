@@ -29,3 +29,24 @@
     //     }
     // }
 }
+
+
+@media (max-width:750px){
+    .carusel{
+        &__inner{
+            width:576px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .carusel{
+        padding: 60px 0 40px 0;
+        &__inner{
+            width:320px;
+        }
+    }
+}
